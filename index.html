@@ -4,77 +4,37 @@
   <meta charset="UTF-8">
   <title>Local Legends RVA</title>
   <link rel="stylesheet" href="style.css">
-  <style>
-    /* Sidebar styling */
-    .sidebar {
-      position: fixed;
-      top: 0;
-      left: 0;
-      width: 200px;
-      height: 100%;
-      background: #333;
-      color: white;
-      padding: 1rem;
-    }
-
-    .sidebar a {
-      display: block;
-      color: white;
-      text-decoration: none;
-      margin-bottom: 1rem;
-    }
-
-    .content {
-      margin-left: 220px;
-      padding: 2rem;
-    }
-  </style>
 </head>
 <body>
-  <div class="sidebar">
-    <h2>Explore RVA</h2>
-    <a href="#legend">Local Legends</a>
-    <a href="#trivia">Trivia Nights</a>
-    <a href="#submit">Submit a Legend</a>
-  </div>
+  <header>
+    <h1>Local Legends RVA</h1>
+    <p>Discover Richmond’s best-kept secrets — from hidden eateries to underground art.</p>
+    <nav>
+      <a href="trivia.html">🧠 Trivia Nights</a>
+    </nav>
+  </header>
 
-  <div class="content">
-    <header>
-      <h1>Local Legends RVA</h1>
-      <p>Discover Richmond’s best-kept secrets — from hidden eateries to underground art.</p>
-    </header>
+  <main>
+    <section class="legend">
+      <h2>🍸 Grandstaff & Stein</h2>
+      <p>
+        Hidden behind a bookshelf at <strong>2113 E Main Street, Richmond, VA 23223</strong>, this Prohibition-style speakeasy delivers vintage charm and modern mixology. The ambiance is rich with velvet, mystery, and literary flair — but the real legend is their <strong>Smoked Old Fashioned</strong>, widely hailed as the best in the city. Served with aromatic smoke and precision, it’s a ritual as much as a drink.
+      </p>
+      <p><strong>Price Point:</strong> 💵💵💵 out of 5</p>
+    </section>
 
-    <main>
-      <section id="legend" class="legend">
-        <h2>🍸 Grandstaff & Stein</h2>
-        <p>
-          Hidden behind a bookshelf at <strong>2113 E Main Street, Richmond, VA 23223</strong>, this Prohibition-style speakeasy delivers vintage charm and modern mixology. The ambiance is rich with velvet, mystery, and literary flair — but the real legend is their <strong>Smoked Old Fashioned</strong>, widely hailed as the best in the city. Served with aromatic smoke and precision, it’s a ritual as much as a drink.
-        </p>
-        <p><strong>Price Point:</strong> 💵💵💵 out of 5</p>
-      </section>
+    <section id="submit" class="submit">
+      <h2>Know a Hidden Gem?</h2>
+      <form>
+        <input type="text" placeholder="Business Name" required>
+        <textarea placeholder="Why is it legendary?" required></textarea>
+        <button type="submit">Submit</button>
+      </form>
+    </section>
+  </main>
 
-      <section id="trivia" class="legend">
-        <h2>🧠 Trivia Nights Around RVA</h2>
-        <h3>📍 Buddy’s</h3>
-        <p>
-          Located in the Fan at <strong>600 N Sheppard St, Richmond, VA 23221</strong>, Buddy’s hosts one of the most lively trivia nights in town. Expect clever questions, cold drinks, and a crowd that’s equal parts competitive and fun. Trivia typically kicks off at <strong>8 PM on Tuesdays</strong>.
-        </p>
-        <p><strong>Vibe:</strong> Casual, energetic, and great for groups</p>
-      </section>
-
-      <section id="submit" class="submit">
-        <h2>Know a Hidden Gem?</h2>
-        <form>
-          <input type="text" placeholder="Business Name" required>
-          <textarea placeholder="Why is it legendary?" required></textarea>
-          <button type="submit">Submit</button>
-        </form>
-      </section>
-    </main>
-
-    <footer>
-      <p>© 2025 Local Legends RVA</p>
-    </footer>
-  </div>
+  <footer>
+    <p>© 2025 Local Legends RVA</p>
+  </footer>
 </body>
 </html>
