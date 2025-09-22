@@ -5,60 +5,149 @@
   <title>Local Legends RVA</title>
   <link rel="stylesheet" href="style.css">
   <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: #f4f4f4;
+      color: #333;
+    }
+
     .sidebar {
       position: fixed;
       top: 0;
       left: 0;
-      width: 200px;
+      width: 220px;
       height: 100%;
-      background: #333;
+      background: #1e1e1e;
       color: white;
-      padding: 1rem;
+      padding: 2rem 1rem;
+    }
+
+    .sidebar h2 {
+      font-size: 1.2rem;
+      margin-bottom: 1.5rem;
     }
 
     .sidebar a {
       display: block;
-      color: white;
+      color: #ffcc00;
       text-decoration: none;
       margin-bottom: 1rem;
+      font-weight: bold;
     }
 
     .content {
-      margin-left: 220px;
+      margin-left: 240px;
       padding: 2rem;
+    }
+
+    header h1 {
+      font-size: 2rem;
+      margin-bottom: 0.5rem;
+    }
+
+    header p {
+      font-size: 1rem;
+      color: #666;
+      margin-bottom: 2rem;
+    }
+
+    .legend-card {
+      background: white;
+      border-radius: 10px;
+      padding: 1rem 1.5rem;
+      margin-bottom: 2rem;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+      transition: transform 0.2s ease;
+    }
+
+    .legend-card:hover {
+      transform: scale(1.02);
+    }
+
+    .legend-card h2 {
+      margin-top: 0;
+      font-size: 1.3rem;
+      color: #222;
+    }
+
+    .legend-card p {
+      margin: 0.5rem 0;
+      font-size: 0.95rem;
+      color: #555;
+    }
+
+    .submit-form {
+      background: #fff;
+      padding: 1.5rem;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+    }
+
+    .submit-form h2 {
+      margin-top: 0;
+      font-size: 1.2rem;
+    }
+
+    .submit-form input,
+    .submit-form textarea {
+      width: 100%;
+      padding: 0.75rem;
+      margin-bottom: 1rem;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      font-size: 0.95rem;
+    }
+
+    .submit-form button {
+      background: #ffcc00;
+      border: none;
+      padding: 0.75rem 1.5rem;
+      font-size: 1rem;
+      border-radius: 6px;
+      cursor: pointer;
+      font-weight: bold;
+    }
+
+    footer {
+      text-align: center;
+      padding: 2rem;
+      font-size: 0.9rem;
+      color: #999;
     }
   </style>
 </head>
 <body>
   <div class="sidebar">
     <h2>Explore RVA</h2>
-    <a href="index.html">Local Legends</a>
-    <a href="trivia.html">Trivia Nights</a>
+    <a href="index.html">🏠 Local Legends</a>
+    <a href="trivia.html">🧠 Trivia Nights</a>
+    <a href="livemusic.html">🎸 Live Music</a>
   </div>
 
   <div class="content">
     <header>
-      <h1>Local Legends RVA</h1>
+      <h1>🏠 Local Legends RVA</h1>
       <p>Discover Richmond’s best-kept secrets — from hidden eateries to underground art.</p>
     </header>
 
     <main>
-      <section class="legend">
+      <div class="legend-card">
         <h2>🍸 Grandstaff & Stein</h2>
         <p>
           Hidden behind a bookshelf at <strong>2113 E Main Street, Richmond, VA 23223</strong>, this Prohibition-style speakeasy delivers vintage charm and modern mixology. The ambiance is rich with velvet, mystery, and literary flair — but the real legend is their <strong>Smoked Old Fashioned</strong>, widely hailed as the best in the city. Served with aromatic smoke and precision, it’s a ritual as much as a drink.
         </p>
         <p><strong>Price Point:</strong> 💵💵💵 out of 5</p>
-      </section>
+      </div>
 
-      <section id="submit" class="submit">
-        <h2>Know a Hidden Gem?</h2>
+      <div class="submit-form">
+        <h2>📩 Know a Hidden Gem?</h2>
         <form>
           <input type="text" placeholder="Business Name" required>
           <textarea placeholder="Why is it legendary?" required></textarea>
           <button type="submit">Submit</button>
         </form>
-      </section>
+      </div>
     </main>
 
     <footer>
