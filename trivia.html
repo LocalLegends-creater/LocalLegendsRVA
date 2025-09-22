@@ -5,128 +5,182 @@
   <title>Trivia Nights RVA</title>
   <link rel="stylesheet" href="style.css">
   <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: #f4f4f4;
+      color: #333;
+    }
+
     .sidebar {
       position: fixed;
       top: 0;
       left: 0;
-      width: 200px;
+      width: 220px;
       height: 100%;
-      background: #333;
+      background: #1e1e1e;
       color: white;
-      padding: 1rem;
+      padding: 2rem 1rem;
+    }
+
+    .sidebar h2 {
+      font-size: 1.2rem;
+      margin-bottom: 1.5rem;
     }
 
     .sidebar a {
       display: block;
-      color: white;
+      color: #ffcc00;
       text-decoration: none;
       margin-bottom: 1rem;
+      font-weight: bold;
     }
 
     .content {
-      margin-left: 220px;
+      margin-left: 240px;
       padding: 2rem;
     }
 
-    .day-section {
+    header h1 {
+      font-size: 2rem;
+      margin-bottom: 0.5rem;
+    }
+
+    header p {
+      font-size: 1rem;
+      color: #666;
       margin-bottom: 2rem;
     }
 
-    .venue {
-      background: #f9f9f9;
-      padding: 1rem;
-      border-radius: 6px;
-      margin-bottom: 1rem;
-      box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+    .day-section {
+      margin-bottom: 3rem;
     }
 
-    .venue h3 {
-      margin-top: 0;
+    .day-section h2 {
+      font-size: 1.5rem;
+      color: #ff6f61;
+      margin-bottom: 1rem;
+    }
+
+    .venue-card {
+      background: white;
+      border-radius: 10px;
+      padding: 1rem 1.5rem;
+      margin-bottom: 1rem;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+      transition: transform 0.2s ease;
+    }
+
+    .venue-card:hover {
+      transform: scale(1.02);
+    }
+
+    .venue-card h3 {
+      margin: 0 0 0.5rem;
+      font-size: 1.2rem;
+      color: #333;
+    }
+
+    .venue-card p {
+      margin: 0.25rem 0;
+      font-size: 0.95rem;
+      color: #555;
+    }
+
+    ul {
+      padding-left: 1.2rem;
+    }
+
+    footer {
+      text-align: center;
+      padding: 2rem;
+      font-size: 0.9rem;
+      color: #999;
     }
   </style>
 </head>
 <body>
   <div class="sidebar">
     <h2>Explore RVA</h2>
-    <a href="index.html">Local Legends</a>
-    <a href="trivia.html">Trivia Nights</a>
+    <a href="index.html">🏠 Local Legends</a>
+    <a href="trivia.html">🧠 Trivia Nights</a>
   </div>
 
   <div class="content">
     <header>
-      <h1>Trivia Nights RVA</h1>
+      <h1>🧠 Trivia Nights RVA</h1>
       <p>Where to flex your brainpower across Richmond’s best bars and breweries.</p>
     </header>
 
     <main>
       <section class="day-section">
         <h2>🗓️ Mondays</h2>
-        <div class="venue">
-          <h3>Mellow Mushroom (Carytown)</h3>
+        <div class="venue-card">
+          <h3>🍕 Mellow Mushroom (Carytown)</h3>
           <p>9 PM — Fun atmosphere, great food, and a lively crowd.</p>
         </div>
-        <div class="venue">
-          <h3>F.W. Sullivan’s</h3>
+        <div class="venue-card">
+          <h3>🍻 F.W. Sullivan’s</h3>
           <p>8 PM & 10:30 PM — Two rounds: general trivia and “Adult Trivia.”</p>
         </div>
-        <div class="venue">
-          <h3>Mojo’s</h3>
+        <div class="venue-card">
+          <h3>🔥 Mojo’s</h3>
           <p>8 PM — Wings specials and prizes every round.</p>
         </div>
       </section>
 
       <section class="day-section">
         <h2>🗓️ Tuesdays</h2>
-        <div class="venue">
-          <h3>Basic City Beer Co.</h3>
+        <div class="venue-card">
+          <h3>🍺 Basic City Beer Co.</h3>
           <p>7 PM — Bonus clues on social media.</p>
         </div>
-        <div class="venue">
-          <h3>Bingo Beer Co.</h3>
+        <div class="venue-card">
+          <h3>🎮 Bingo Beer Co.</h3>
           <p>7 PM — Quiz nights with arcade vibes.</p>
         </div>
-        <div class="venue">
-          <h3>Final Gravity Brewing Co.</h3>
+        <div class="venue-card">
+          <h3>🍻 Final Gravity Brewing Co.</h3>
           <p>7 PM — Hosted by High Five Trivia.</p>
         </div>
-        <div class="venue">
-          <h3>New York Deli</h3>
+        <div class="venue-card">
+          <h3>🥪 New York Deli</h3>
           <p>8 PM — Themed rounds, music, and a victory cup for winners.</p>
         </div>
       </section>
 
       <section class="day-section">
         <h2>🗓️ Wednesdays</h2>
-        <div class="venue">
-          <h3>Benchtop Brewing</h3>
+        <div class="venue-card">
+          <h3>🐶 Benchtop Brewing</h3>
           <p>7 PM — Dog-friendly and hosted by Cap City Trivia.</p>
         </div>
-        <div class="venue">
-          <h3>Buskey Cider</h3>
+        <div class="venue-card">
+          <h3>🍎 Buskey Cider</h3>
           <p>7 PM — Clues posted on Instagram stories.</p>
         </div>
-        <div class="venue">
-          <h3>Three Notch’d RVA</h3>
+        <div class="venue-card">
+          <h3>🥨 Three Notch’d RVA</h3>
           <p>7 PM — Trivia with pretzel bites and craft beer.</p>
         </div>
       </section>
 
       <section class="day-section">
         <h2>🗓️ Thursdays</h2>
-        <div class="venue">
-          <h3>Stone Brewing</h3>
+        <div class="venue-card">
+          <h3>🪨 Stone Brewing</h3>
           <p>7 PM — Classic pub trivia in a spacious taproom.</p>
         </div>
-        <div class="venue">
-          <h3>Soul Taco</h3>
+        <div class="venue-card">
+          <h3>🌮 Soul Taco</h3>
           <p>7 PM — Trivia with tacos — what’s not to love?</p>
         </div>
       </section>
 
       <section class="day-section">
         <h2>🗓️ Sundays</h2>
-        <div class="venue">
-          <h3>Wong Gonzalez</h3>
+        <div class="venue-card">
+          <h3>🥢 Wong Gonzalez</h3>
           <p>7 PM — Chill trivia night to close out the weekend.</p>
         </div>
       </section>
