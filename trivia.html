@@ -4,28 +4,57 @@
   <meta charset="UTF-8">
   <title>Trivia Nights RVA</title>
   <link rel="stylesheet" href="style.css">
+  <style>
+    .sidebar {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 200px;
+      height: 100%;
+      background: #333;
+      color: white;
+      padding: 1rem;
+    }
+
+    .sidebar a {
+      display: block;
+      color: white;
+      text-decoration: none;
+      margin-bottom: 1rem;
+    }
+
+    .content {
+      margin-left: 220px;
+      padding: 2rem;
+    }
+  </style>
 </head>
 <body>
-  <header>
-    <h1>Trivia Nights RVA</h1>
-    <p>Where to flex your brainpower across Richmond’s best bars and breweries.</p>
-    <nav>
-      <a href="index.html">🏠 Local Legends</a>
-    </nav>
-  </header>
+  <div class="sidebar">
+    <h2>Explore RVA</h2>
+    <a href="index.html">Local Legends</a>
+    <a href="trivia.html">Trivia Nights</a>
+  </div>
 
-  <main>
-    <section class="legend">
-      <h2>📍 Buddy’s</h2>
-      <p>
-        Located in the Fan at <strong>600 N Sheppard St, Richmond, VA 23221</strong>, Buddy’s hosts one of the most lively trivia nights in town. Expect clever questions, cold drinks, and a crowd that’s equal parts competitive and fun. Trivia typically kicks off at <strong>8 PM on Tuesdays</strong>.
-      </p>
-      <p><strong>Vibe:</strong> Casual, energetic, and great for groups</p>
-    </section>
-  </main>
+  <div class="content">
+    <header>
+      <h1>Trivia Nights RVA</h1>
+      <p>Where to flex your brainpower across Richmond’s best bars and breweries.</p>
+    </header>
 
-  <footer>
-    <p>© 2025 Trivia Nights RVA</p>
-  </footer>
+    <main>
+      <section class="legend">
+        <h2>📍 Buddy’s</h2>
+        <p>
+          Located in the Fan at <strong>600 N Sheppard St, Richmond, VA 23221</strong>, Buddy’s hosts one of the most lively trivia nights in town. Expect clever questions, cold drinks, and a crowd that’s equal parts competitive and fun. Trivia typically kicks off at <strong>8 PM on Tuesdays</strong>.
+        </p>
+        <p><strong>Vibe:</strong> Casual, energetic, and great for groups</p>
+      </section>
+    </main>
+
+    <footer>
+      <p>© 2025 Trivia Nights RVA</p>
+    </footer>
+  </div>
 </body>
 </html>
