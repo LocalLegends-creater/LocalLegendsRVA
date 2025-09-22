@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Music RVA</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: #f4f4f4;
+      color: #333;
+    }
+
+    .sidebar {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 220px;
+      height: 100%;
+      background: #1e1e1e;
+      color: white;
+      padding: 2rem 1rem;
+    }
+
+    .sidebar h2 {
+      font-size: 1.2rem;
+      margin-bottom: 1.5rem;
+    }
+
+    .sidebar a {
+      display: block;
+      color: #00d1b2;
+      text-decoration: none;
+      margin-bottom: 1rem;
+      font-weight: bold;
+    }
+
+    .content {
+      margin-left: 240px;
+      padding: 2rem;
+    }
+
+    header h1 {
+      font-size: 2rem;
+      margin-bottom: 0.5rem;
+    }
+
+    header p {
+      font-size: 1rem;
+      color: #666;
+      margin-bottom: 2rem;
+    }
+
+    .venue-card {
+      background: white;
+      border-radius: 10px;
+      padding: 1rem 1.5rem;
+      margin-bottom: 2rem;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+      transition: transform 0.2s ease;
+    }
+
+    .venue-card:hover {
+      transform: scale(1.02);
+    }
+
+    .venue-card h3 {
+      margin-top: 0;
+      font-size: 1.3rem;
+      color: #222;
+    }
+
+    .venue-card p {
+      margin: 0.5rem 0;
+      font-size: 0.95rem;
+      color: #555;
+    }
+
+    footer {
+      text-align: center;
+      padding: 2rem;
+      font-size: 0.9rem;
+      color: #999;
+    }
+  </style>
+</head>
+<body>
+  <div class="sidebar">
+    <h2>Explore RVA</h2>
+    <a href="index.html">🏠 Local Legends</a>
+    <a href="trivia.html">🧠 Trivia Nights</a>
+    <a href="music.html">🎵 Music</a>
+  </div>
+
+  <div class="content">
+    <header>
+      <h1>🎵 Music RVA</h1>
+      <p>Explore Richmond’s vibrant music scene — from iconic venues to outdoor concerts and indie gems.</p>
+    </header>
+
+    <main>
+      <div class="venue-card">
+        <h3>🎤 The National</h3>
+        <p>Downtown’s premier venue for national touring acts and sold-out shows. Big sound, big energy.</p>
+        <p><strong>Location:</strong> 708 E Broad St</p>
+      </div>
+
+      <div class="venue-card">
+        <h3>🎶 The Broadberry</h3>
+        <p>Indie, funk, and hip-hop in an intimate setting. Great acoustics and a loyal crowd.</p>
+        <p><strong>Location:</strong> 2729 W Broad St</p>
+      </div>
+
+      <div class="venue-card">
+        <h3>🎷 The Camel</h3>
+        <p>Jazz, jam bands, and open mic nights. A cozy venue with great food and local flavor.</p>
+        <p><strong>Location:</strong> 1621 W Broad St</p>
+      </div>
+
+      <div class="venue-card">
+        <h3>🖼️ Gallery5</h3>
+        <p>Art meets music in this historic firehouse. Expect punk, experimental, and First Friday magic.</p>
+        <p><strong>Location:</strong> 200 W Marshall St</p>
+      </div>
+
+      <div class="venue-card">
+        <h3>🌳 Music in the Park</h3>
+        <p>Free outdoor concerts at Forest Hill and Byrd Park. Family-friendly and BYO blanket.</p>
+        <p><strong>Location:</strong> Various parks</p>
+      </div>
+    </main>
+
+    <footer>
+      <p>© 2025 Music RVA</p>
+    </footer>
+  </div>
+</body>
+</html>
