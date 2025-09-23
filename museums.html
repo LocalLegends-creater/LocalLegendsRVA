@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Richmond Museums</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: #f4f4f4;
+      color: #333;
+    }
+
+    .sidebar {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 220px;
+      height: 100%;
+      background: #1e1e1e;
+      color: white;
+      padding: 2rem 1rem;
+    }
+
+    .sidebar h2 {
+      font-size: 1.2rem;
+      margin-bottom: 1.5rem;
+    }
+
+    .sidebar a {
+      display: block;
+      color: #00d1b2;
+      text-decoration: none;
+      margin-bottom: 1rem;
+      font-weight: bold;
+    }
+
+    .content {
+      margin-left: 240px;
+      padding: 2rem;
+    }
+
+    header h1 {
+      font-size: 2rem;
+      margin-bottom: 0.5rem;
+    }
+
+    header p {
+      font-size: 1rem;
+      color: #666;
+      margin-bottom: 2rem;
+    }
+
+    .museum-card {
+      background: white;
+      border-radius: 10px;
+      padding: 1.5rem;
+      margin-bottom: 2rem;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+      transition: transform 0.2s ease;
+    }
+
+    .museum-card:hover {
+      transform: scale(1.02);
+    }
+
+    .museum-card h3 {
+      margin-top: 0;
+      font-size: 1.4rem;
+      color: #222;
+    }
+
+    .event {
+      margin-bottom: 1rem;
+      padding: 0.75rem;
+      background: #f9f9f9;
+      border-left: 4px solid #00d1b2;
+      border-radius: 6px;
+    }
+
+    .event-date {
+      font-size: 0.9rem;
+      color: #888;
+      margin-top: 0.25rem;
+    }
+
+    footer {
+      text-align: center;
+      padding: 2rem;
+      font-size: 0.9rem;
+      color: #999;
+    }
+  </style>
+</head>
+<body>
+  <div class="sidebar">
+    <h2>Explore RVA</h2>
+    <a href="index.html">🏠 Local Legends</a>
+    <a href="trivia.html">🧠 Trivia Nights</a>
+    <a href="music.html">🎵 Music</a>
+    <a href="museums.html">🏛️ Museums</a>
+  </div>
+
+  <div class="content">
+    <header>
+      <h1>🏛️ Richmond Museums & Events</h1>
+      <p>Discover Richmond’s cultural gems and the events that bring history, art, and storytelling to life.</p>
+    </header>
+
+    <main>
+      <div class="museum-card">
+        <h3>🎨 Virginia Museum of Fine Arts (VMFA)</h3>
+        <div class="event">
+          <strong>Happy Hour at Best Café</strong> — Enjoy wine, beer, and small bites in the sculpture garden.
+          <div class="event-date">Thursdays & Fridays · 5–7 PM</div>
+        </div>
+        <div class="event">
+          <strong>Intersecting History Museum Crawl</strong> — Free access to 10 museums with bus transportation.
+          <div class="event-date">Sunday, September 28 · 12–5 PM</div>
+        </div>
+        <p><strong>Location:</strong> 200 N Arthur Ashe Blvd</p>
+      </div>
+
+      <div class="museum-card">
+        <h3>🕯️ Virginia Holocaust Museum</h3>
+        <div class="event">
+          <strong>Permanent Exhibit</strong> — Walk through a recreated concentration camp and hear survivor stories.
+          <div class="event-date">Open Daily · 9 AM–5 PM</div>
+        </div>
+        <p><strong>Location:</strong> 2000 E Cary St</p>
+      </div>
+
+      <div class="museum-card">
+        <h3>🖋️ Poe Museum</h3>
+        <div class="event">
+          <strong>UnHappy Hour: Fairy-Land</strong> — Literary cocktails and live music in the enchanted garden.
+          <div class="event-date">Thursday, September 25 · 6–9 PM</div>
+        </div>
+        <div class="event">
+          <strong>Student Writing Contest</strong> — Explore Poe’s influence on sci-fi and detective fiction.
+          <div class="event-date">Submissions due October 31</div>
+        </div>
+        <p><strong>Location:</strong> 1914 E Main St</p>
+      </div>
+
+      <div class="museum-card">
+        <h3>🏛️ The Valentine</h3>
+        <div class="event">
+          <strong>Downtown Walking Tours</strong> — Explore Richmond’s architecture and hidden stories.
+          <div class="event-date">Saturdays · 10 AM</div>
+        </div>
+        <p><strong>Location:</strong> 1015 E Clay St</p>
+      </div>
+
+      <div class="museum-card">
+        <h3>⚔️ American Civil War Museum</h3>
+        <div class="event">
+          <strong>Battlefield Perspectives</strong> — Multimedia exhibits and guided tours.
+          <div class="event-date">Daily · 10 AM–5 PM</div>
+        </div>
+        <p><strong>Location:</strong> 500 Tredegar St</p>
+      </div>
+
+      <div class="museum-card">
+        <h3>🖼️ Institute for Contemporary Art (ICA)</h3>
+        <div class="event">
+          <strong>Current Exhibition: “Radical Futures”</strong> — Art exploring justice, technology, and identity.
+          <div class="event-date">Open Wed–Sun · 12–6 PM</div>
+        </div>
+        <p><strong>Location:</strong> 601 W Broad St</p>
+      </div>
+    </main>
+
+    <footer>
+      <p>© 2025 Richmond Museums RVA</p>
+    </footer>
+  </div>
+</body>
+</html>
